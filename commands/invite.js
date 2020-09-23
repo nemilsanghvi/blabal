@@ -14,19 +14,19 @@ module.exports = {
   },
 
   run: async function(client, message, args) {
-    const embed = new Discord.MessageEmbed()
+    const Embed = new Discord.MessageEmbed()
 
       .setAuthor("Invite Link of Bot")
 
       .setColor("BLUE")
 
       .setDescription(
-        "[Invite Here](https://discord.com/oauth2/authorize?client_id=758235022120583168&permissions=268790848&scope=bot)"
+        " Here is My Invite Link [Invite Here](https://discord.com/oauth2/authorize?client_id=758235022120583168&permissions=268790848&scope=bot) "
       )
-      .setFooter(
-        "Currently the bot is in Beta if any problems arise do contact in support server."
-      );
 
-    message.channel.send(embed);
+      .setFooter(
+        "Currently the bot is in Beta if any problems arise do contact in the support sever."
+      );
+    message.channel.send(Embed);
   }
 };
