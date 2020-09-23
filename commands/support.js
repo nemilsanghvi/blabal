@@ -16,12 +16,12 @@ module.exports = {
   run: async function(client, message, args) {
     const Embed = new Discord.MessageEmbed()
 
-      .setAuthor("Invite Link of Bot")
+      .setAuthor("Support Server Link of Bot")
 
       .setColor("GREEN")
 
       .setDescription(
-        " ☣️ Join the [Support Server](https://discord.gg/HAsZCN9) for any kind  support"
+        " ☣️ Join the [Support Server](https://discord.gg/HAsZCN9) for any kind of support!!"
       )
 
       .setFooter("");
