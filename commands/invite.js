@@ -21,12 +21,12 @@ module.exports = {
       .setColor("BLUE")
 
       .setDescription(
-        " [Invite Here](https://discord.com/oauth2/authorize?client_id=758235022120583168&permissions=268790848&scope=bot) "
+        "[Invite Here](https://discord.com/oauth2/authorize?client_id=758235022120583168&permissions=268790848&scope=bot)"
       )
-
       .setFooter(
-        "Currently the bot is in Beta if any problems arise do contact in the support server [Support](https://discord.gg/3K4HeYz)"
+        "Currently the bot is in Beta if any problems arise do contact in support server."
       );
+
     message.channel.send(embed);
   }
 };
