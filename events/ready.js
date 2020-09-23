@@ -1,41 +1,17 @@
-module.exports = class extends Event {
-  constructor(...args) {
-    super(...args, {
-      once: true
-    });
-  }
+//module.exports = async client => {
+// console.log(`[API] Logged in as ${client.user.username}`);
 
-  run() {
-    console.log(
-      [
-        `Logged in as ${this.client.user.tag}`,
+//await client.user.setActivity("Music", "$" {
+//type: "LISTENING" //can be LISTENING, WATCHING, PLAYING, STREAMI
 
-        `Loaded ${this.client.commands.size} commands!`,
+// let activityTypes = ['PLAYING','STREAMING','LISTENING','WATCHING']
+// let randomType = activityTypes[Math.floor((Math.random()*activityTypes.length))]
+// setInterval(async ()=>{ await client.user.setActivity('Your text here.', { type: randomType }) },10000)
 
-        `Loaded ${this.client.events.size} events!`
-      ].join("\n")
-    );
+module.exports = async client => {
+  console.log(`[API] Logged in as ${client.user.username}`);
 
-    const activities = [
-      `${this.client.guilds.cache.size} servers!`,
-
-      `${this.client.channels.cache.size} channels!`,
-
-      `${this.client.guilds.cache.reduce(
-        (a, b) => a + b.memberCount,
-        0
-      )} users!`
-    ];
-
-    let i = 0;
-
-    setInterval(
-      () =>
-        this.client.user.setActivity(
-          `${this.client.prefix}help | ${activities[i++ % activities.length]}`,
-          { type: "WATCHING" }
-        ),
-      15000
-    );
-  }
+  await client.user.setActivity("Music" {
+    type: "LISTENING" //can be LISTENING, WATCHING, PLAYING, STREAMING
+  });
 };
