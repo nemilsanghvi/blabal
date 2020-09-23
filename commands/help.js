@@ -20,7 +20,7 @@ module.exports = {
         .setAuthor("Commands of "+client.user.username, )
         .setColor("RED")
         .setDescription(allcmds)
-        .setFooter(`To get info of each command you can do ${client.config.prefix}help [command] | Hander by VOŁT丶ΛGxTORQUΣ#0007`)
+        .setFooter(`To get info of each command you can do ${client.config.prefix}help [command] | Handled by VOŁT丶ΛGxTORQUΣ#0007`)
 
         if(!args[0])return message.channel.send(embed)
         else {
