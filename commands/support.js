@@ -4,7 +4,7 @@ const sendError = require("../util/error");
 
 module.exports = {
   info: {
-    name: "Support",
+    name: "support",
 
     description: "To Show the link of support server",
 
@@ -14,16 +14,18 @@ module.exports = {
   },
 
   run: async function(client, message, args) {
-    const embed = new Discord.MessageEmbed()
+    const Embed = new Discord.MessageEmbed()
 
       .setAuthor("Invite Link of Bot")
 
-      .setColor("BLUE")
+      .setColor("GREEN")
 
-      .setDescription("[Support](https://discord.gg/3K4HeYz)")
+      .setDescription(
+        " ☣️ Join the [Support Server](https://discord.gg/HAsZCN9) for any kind  support"
+      )
 
-      .setFooter("Reach out to support server for any kind of help");
+      .setFooter("");
 
-    message.channel.send(embed);
+    message.channel.send(Embed);
   }
 };
