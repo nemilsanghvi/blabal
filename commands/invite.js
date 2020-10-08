@@ -10,7 +10,7 @@ module.exports = {
 
     usage: "",
 
-    aliases: []
+    aliases: ["inv"]
   },
 
   run: async function(client, message, args) {
@@ -25,7 +25,7 @@ module.exports = {
       )
 
       .setFooter(
-        "Currently the bot is in Beta if any problems arise do contact in the support sever."
+        "BeatBox™"
       );
     message.channel.send(Embed);
   }

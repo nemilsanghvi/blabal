@@ -24,7 +24,7 @@ module.exports = {
         " ☣️ Join the [Support Server](https://discord.gg/HAsZCN9) for any kind of support!!"
       )
 
-      .setFooter("");
+      .setFooter("BeatBox™");
 
     message.channel.send(Embed);
   }
