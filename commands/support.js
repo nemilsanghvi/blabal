@@ -21,7 +21,7 @@ module.exports = {
       .setColor("GREEN")
 
       .setDescription(
-        " ☣️ Join the [Support Server](https://discord.gg/HAsZCN9) for any kind of support!!"
+        " ☣️ Join the [Support Server](https://discord.gg/FjpsyEz) for any kind of support!!"
       )
 
       .setFooter("BeatBox™");
